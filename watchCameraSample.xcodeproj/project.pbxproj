@@ -13,6 +13,17 @@
 		5297A9711B1924CE00951024 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5297A9701B1924CE00951024 /* Images.xcassets */; };
 		5297A9741B1924CE00951024 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5297A9721B1924CE00951024 /* LaunchScreen.xib */; };
 		5297A9801B1924CE00951024 /* watchCameraSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5297A97F1B1924CE00951024 /* watchCameraSampleTests.swift */; };
+		5297A9931B1924E300951024 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5297A9921B1924E300951024 /* InterfaceController.swift */; };
+		5297A9951B1924E300951024 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5297A9941B1924E300951024 /* NotificationController.swift */; };
+		5297A9971B1924E300951024 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5297A9961B1924E300951024 /* GlanceController.swift */; };
+		5297A9991B1924E300951024 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5297A9981B1924E300951024 /* Images.xcassets */; };
+		5297A99D1B1924E300951024 /* watchCameraSample WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 5297A99C1B1924E300951024 /* watchCameraSample WatchKit App.app */; };
+		5297A9A51B1924E300951024 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5297A9A31B1924E300951024 /* Interface.storyboard */; };
+		5297A9A71B1924E300951024 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5297A9A61B1924E300951024 /* Images.xcassets */; };
+		5297A9AA1B1924E300951024 /* watchCameraSample WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5297A98D1B1924E300951024 /* watchCameraSample WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5297A9B41B192A5000951024 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5297A9B31B192A5000951024 /* Consts.swift */; };
+		5297A9B61B192B6900951024 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5297A9B51B192B6900951024 /* Consts.swift */; };
+		5297A9B91B19317800951024 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5297A9B81B19317800951024 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +34,35 @@
 			remoteGlobalIDString = 5297A9631B1924CE00951024;
 			remoteInfo = watchCameraSample;
 		};
+		5297A99E1B1924E300951024 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5297A95C1B1924CE00951024 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5297A99B1B1924E300951024;
+			remoteInfo = "watchCameraSample WatchKit App";
+		};
+		5297A9A81B1924E300951024 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5297A95C1B1924CE00951024 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5297A98C1B1924E300951024;
+			remoteInfo = "watchCameraSample WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5297A9B11B1924E300951024 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5297A9AA1B1924E300951024 /* watchCameraSample WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5297A9641B1924CE00951024 /* watchCameraSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watchCameraSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +75,22 @@
 		5297A9791B1924CE00951024 /* watchCameraSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = watchCameraSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5297A97E1B1924CE00951024 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5297A97F1B1924CE00951024 /* watchCameraSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchCameraSampleTests.swift; sourceTree = "<group>"; };
+		5297A98D1B1924E300951024 /* watchCameraSample WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "watchCameraSample WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5297A9901B1924E300951024 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5297A9911B1924E300951024 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		5297A9921B1924E300951024 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		5297A9941B1924E300951024 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		5297A9961B1924E300951024 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		5297A9981B1924E300951024 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5297A99C1B1924E300951024 /* watchCameraSample WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "watchCameraSample WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5297A9A21B1924E300951024 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5297A9A41B1924E300951024 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		5297A9A61B1924E300951024 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5297A9B21B1927EB00951024 /* watchCameraSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = watchCameraSample.entitlements; sourceTree = "<group>"; };
+		5297A9B31B192A5000951024 /* Consts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
+		5297A9B51B192B6900951024 /* Consts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
+		5297A9B71B192D6A00951024 /* watchCameraSample WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "watchCameraSample WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		5297A9B81B19317800951024 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +108,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5297A98A1B1924E300951024 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +123,8 @@
 			children = (
 				5297A9661B1924CE00951024 /* watchCameraSample */,
 				5297A97C1B1924CE00951024 /* watchCameraSampleTests */,
+				5297A98E1B1924E300951024 /* watchCameraSample WatchKit Extension */,
+				5297A9A01B1924E300951024 /* watchCameraSample WatchKit App */,
 				5297A9651B1924CE00951024 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +134,8 @@
 			children = (
 				5297A9641B1924CE00951024 /* watchCameraSample.app */,
 				5297A9791B1924CE00951024 /* watchCameraSampleTests.xctest */,
+				5297A98D1B1924E300951024 /* watchCameraSample WatchKit Extension.appex */,
+				5297A99C1B1924E300951024 /* watchCameraSample WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,8 +143,11 @@
 		5297A9661B1924CE00951024 /* watchCameraSample */ = {
 			isa = PBXGroup;
 			children = (
+				5297A9B21B1927EB00951024 /* watchCameraSample.entitlements */,
 				5297A9691B1924CE00951024 /* AppDelegate.swift */,
 				5297A96B1B1924CE00951024 /* ViewController.swift */,
+				5297A9B31B192A5000951024 /* Consts.swift */,
+				5297A9B81B19317800951024 /* Utils.swift */,
 				5297A96D1B1924CE00951024 /* Main.storyboard */,
 				5297A9701B1924CE00951024 /* Images.xcassets */,
 				5297A9721B1924CE00951024 /* LaunchScreen.xib */,
@@ -112,6 +181,47 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5297A98E1B1924E300951024 /* watchCameraSample WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5297A9B71B192D6A00951024 /* watchCameraSample WatchKit Extension.entitlements */,
+				5297A9921B1924E300951024 /* InterfaceController.swift */,
+				5297A9941B1924E300951024 /* NotificationController.swift */,
+				5297A9961B1924E300951024 /* GlanceController.swift */,
+				5297A9B51B192B6900951024 /* Consts.swift */,
+				5297A9981B1924E300951024 /* Images.xcassets */,
+				5297A98F1B1924E300951024 /* Supporting Files */,
+			);
+			path = "watchCameraSample WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		5297A98F1B1924E300951024 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5297A9901B1924E300951024 /* Info.plist */,
+				5297A9911B1924E300951024 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5297A9A01B1924E300951024 /* watchCameraSample WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				5297A9A31B1924E300951024 /* Interface.storyboard */,
+				5297A9A61B1924E300951024 /* Images.xcassets */,
+				5297A9A11B1924E300951024 /* Supporting Files */,
+			);
+			path = "watchCameraSample WatchKit App";
+			sourceTree = "<group>";
+		};
+		5297A9A11B1924E300951024 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5297A9A21B1924E300951024 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +232,12 @@
 				5297A9601B1924CE00951024 /* Sources */,
 				5297A9611B1924CE00951024 /* Frameworks */,
 				5297A9621B1924CE00951024 /* Resources */,
+				5297A9B11B1924E300951024 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5297A9A91B1924E300951024 /* PBXTargetDependency */,
 			);
 			name = watchCameraSample;
 			productName = watchCameraSample;
@@ -150,6 +262,39 @@
 			productReference = 5297A9791B1924CE00951024 /* watchCameraSampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		5297A98C1B1924E300951024 /* watchCameraSample WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5297A9AE1B1924E300951024 /* Build configuration list for PBXNativeTarget "watchCameraSample WatchKit Extension" */;
+			buildPhases = (
+				5297A9891B1924E300951024 /* Sources */,
+				5297A98A1B1924E300951024 /* Frameworks */,
+				5297A98B1B1924E300951024 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5297A99F1B1924E300951024 /* PBXTargetDependency */,
+			);
+			name = "watchCameraSample WatchKit Extension";
+			productName = "watchCameraSample WatchKit Extension";
+			productReference = 5297A98D1B1924E300951024 /* watchCameraSample WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		5297A99B1B1924E300951024 /* watchCameraSample WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5297A9AB1B1924E300951024 /* Build configuration list for PBXNativeTarget "watchCameraSample WatchKit App" */;
+			buildPhases = (
+				5297A99A1B1924E300951024 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "watchCameraSample WatchKit App";
+			productName = "watchCameraSample WatchKit App";
+			productReference = 5297A99C1B1924E300951024 /* watchCameraSample WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,10 +306,28 @@
 				TargetAttributes = {
 					5297A9631B1924CE00951024 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 8JNZ54VYUL;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					5297A9781B1924CE00951024 = {
 						CreatedOnToolsVersion = 6.3.2;
 						TestTargetID = 5297A9631B1924CE00951024;
+					};
+					5297A98C1B1924E300951024 = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 8JNZ54VYUL;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					5297A99B1B1924E300951024 = {
+						CreatedOnToolsVersion = 6.3.2;
 					};
 				};
 			};
@@ -183,6 +346,8 @@
 			targets = (
 				5297A9631B1924CE00951024 /* watchCameraSample */,
 				5297A9781B1924CE00951024 /* watchCameraSampleTests */,
+				5297A98C1B1924E300951024 /* watchCameraSample WatchKit Extension */,
+				5297A99B1B1924E300951024 /* watchCameraSample WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -205,6 +370,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5297A98B1B1924E300951024 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5297A9991B1924E300951024 /* Images.xcassets in Resources */,
+				5297A99D1B1924E300951024 /* watchCameraSample WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5297A99A1B1924E300951024 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5297A9A51B1924E300951024 /* Interface.storyboard in Resources */,
+				5297A9A71B1924E300951024 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -213,7 +396,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5297A96C1B1924CE00951024 /* ViewController.swift in Sources */,
+				5297A9B41B192A5000951024 /* Consts.swift in Sources */,
 				5297A96A1B1924CE00951024 /* AppDelegate.swift in Sources */,
+				5297A9B91B19317800951024 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +410,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5297A9891B1924E300951024 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5297A9951B1924E300951024 /* NotificationController.swift in Sources */,
+				5297A9B61B192B6900951024 /* Consts.swift in Sources */,
+				5297A9931B1924E300951024 /* InterfaceController.swift in Sources */,
+				5297A9971B1924E300951024 /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +428,16 @@
 			isa = PBXTargetDependency;
 			target = 5297A9631B1924CE00951024 /* watchCameraSample */;
 			targetProxy = 5297A97A1B1924CE00951024 /* PBXContainerItemProxy */;
+		};
+		5297A99F1B1924E300951024 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5297A99B1B1924E300951024 /* watchCameraSample WatchKit App */;
+			targetProxy = 5297A99E1B1924E300951024 /* PBXContainerItemProxy */;
+		};
+		5297A9A91B1924E300951024 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5297A98C1B1924E300951024 /* watchCameraSample WatchKit Extension */;
+			targetProxy = 5297A9A81B1924E300951024 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -250,6 +456,14 @@
 				5297A9731B1924CE00951024 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		5297A9A31B1924E300951024 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5297A9A41B1924E300951024 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -340,9 +554,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = watchCameraSample/watchCameraSample.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = watchCameraSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -350,9 +568,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = watchCameraSample/watchCameraSample.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = watchCameraSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -390,6 +612,70 @@
 			};
 			name = Release;
 		};
+		5297A9AC1B1924E300951024 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = watchCameraSample_WatchKit_Extension;
+				INFOPLIST_FILE = "watchCameraSample WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		5297A9AD1B1924E300951024 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = watchCameraSample_WatchKit_Extension;
+				INFOPLIST_FILE = "watchCameraSample WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		5297A9AF1B1924E300951024 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "watchCameraSample WatchKit Extension/watchCameraSample WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "watchCameraSample WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5297A9B01B1924E300951024 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "watchCameraSample WatchKit Extension/watchCameraSample WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "watchCameraSample WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -415,6 +701,22 @@
 			buildConfigurations = (
 				5297A9871B1924CE00951024 /* Debug */,
 				5297A9881B1924CE00951024 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5297A9AB1B1924E300951024 /* Build configuration list for PBXNativeTarget "watchCameraSample WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5297A9AC1B1924E300951024 /* Debug */,
+				5297A9AD1B1924E300951024 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5297A9AE1B1924E300951024 /* Build configuration list for PBXNativeTarget "watchCameraSample WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5297A9AF1B1924E300951024 /* Debug */,
+				5297A9B01B1924E300951024 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

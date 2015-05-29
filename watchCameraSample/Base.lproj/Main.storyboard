@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="watchCameraSample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +15,52 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhj-W7-35c">
+                                <rect key="frame" x="239" y="275" width="122" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5Pq-xb-IGJ"/>
+                                    <constraint firstAttribute="width" constant="122" id="naQ-bd-547"/>
+                                </constraints>
+                                <state key="normal" title="肌を変更する">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePhoto:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Gyw-Gc-z9Q"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_skin" translatesAutoresizingMaskIntoConstraints="NO" id="i9a-ND-dsV">
+                                <rect key="frame" x="0.0" y="55" width="600" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="cY3-V8-oyB"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="i9a-ND-dsV" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="0XX-tf-PAj"/>
+                            <constraint firstItem="i9a-ND-dsV" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="35" id="7vQ-kj-bXf"/>
+                            <constraint firstItem="uhj-W7-35c" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="47" id="Agd-OJ-dsM"/>
+                            <constraint firstItem="uhj-W7-35c" firstAttribute="top" secondItem="i9a-ND-dsV" secondAttribute="bottom" constant="20" id="UhY-3t-Hhk"/>
+                            <constraint firstAttribute="trailing" secondItem="i9a-ND-dsV" secondAttribute="trailing" id="W64-d9-rGq"/>
+                            <constraint firstAttribute="centerX" secondItem="uhj-W7-35c" secondAttribute="centerX" id="w0s-n1-aGF"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Agd-OJ-dsM"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="skinImageView" destination="i9a-ND-dsV" id="rZT-gi-SVO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="305" y="196"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="img_skin" width="552" height="806"/>
+    </resources>
 </document>
